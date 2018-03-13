@@ -1,0 +1,5 @@
+FROM python:3.6.0-alpine
+RUN pip install falcon
+ADD recsys-app.py recsys-app.py
+ENTRYPOINT ["python3",  "recsys-app.py"]
+
